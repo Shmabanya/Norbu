@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Reservation </title>
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <script 
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  emailjs.init('FR5v0oMChlpij7Bqg')
+</script>
+
+</head>
+
+<body >
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+        <a href="norbu.html" class="logo">
+            <img src="Images/Norbu.jpg" width="160" height="50" alt="Norbu - Home">
+          </a>
+          
+          <nav class="navbar" data-navbar>
+
+            <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="norbu.html" class="logo">
+                <img src="Images/Norbu.jpg" width="160" height="50" alt="Norbu - Home">
+              </a>
+
+        <ul class = "navbar-list">
+            <li class = "navbar-item">
+                <a href="norbu.html" class = "navbar-link hover-underline">
+                    <div class ="separator"></div>
+                    
+                    <span class="span">Home</span>
+                </a>
+            </li>
+
+            <li class = "navbar-item">
+                <a href="menus.html" class = "navbar-link hover-underline ">
+                    <div class ="separator"></div>
+                    
+                    <span class="span">Menu</span>
+                </a>
+            </li>
+
+            <li class = "navbar-item">
+                <a href="" class = "navbar-link hover-underline">
+                    <div class ="separator"></div>
+                    
+                    <span class="span">About us</span>
+                </a>
+            </li>
+            <li class = "navbar-item">
+                <a href="https://norbulancaster.smartonlineorder.com/store/" class = "navbar-link hover-underline">
+                    <div class ="separator"></div>
+                    
+                    <span class="span">Gifts from Nepal</span>
+                </a>
+            </li>
+            <li class = "navbar-item">
+                <a href="directions.html" class = "navbar-link hover-underline">
+                    <div class ="separator"></div>
+                    
+                    <span class="span">How to reach us</span>
+                </a>
+            </li>
+            <li class = "navbar-item">
+                <a href="reservation.html" class = "navbar-link hover-underline active">
+                    <div class ="separator"></div>
+                    
+                    <span class="span">Make a reservation</span>
+                </a>
+            </li>
+            <li class = "navbar-item">
+                <a href="https://norbulancaster.smartonlineorder.com/store/" class = "navbar-link hover-underline">
+                    <div class ="separator"></div>
+                    
+                    <span class="span">Order online</span>
+                </a>
+            </li>
+            
+            
+        </ul>
+    </nav>
+
+</header>
+<main>
+
+
+<!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form id="form"  class="form-left">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+               
+                We accept reservations for parties of 5 to 15 guests. <br>
+                Tables will be held for 10 minutes, so please arrive on time for your requested reservation. Thank you for your understanding.
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" id="name"  placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper" >
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="people" id="people" class="input-field">
+                    <option value = "people-select"># of people</option>
+                    <option value="5-people">5 People</option>
+                    <option value="6-people">6 People</option>
+                    <option value="7-people">7 People</option>
+                    <option value="8-people">8 People</option>
+                    <option value="9-people">9 People</option>
+                    <option value="10-people">10 People</option>
+                    <option value="11-people">11 People</option>
+                    <option value="12-people">12 People</option>
+                    <option value="13-people">13 People</option>
+                    <option value="14-people">14 People</option>
+                    <option value="15-people">15 People</option>
+
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper" >
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="date" id="date"  class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="time" id ="time"  class="input-field">
+                    <option value = "time-select">What time?</option>
+                    <option value="011:30am">11 : 30 am</option>
+                    <option value="012:00pm">12 : 00 pm</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="01:30pm">01 : 30 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="02:30pm">02 : 30 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="05:30pm">05 : 30 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="06:30pm">06 : 30 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="07:30pm">07 : 30 pm</option>
+                  
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+            
+              <button class="btn btn-secondary" onclick='sendMail()'value = "send" input type = "submit" id="button">
+               
+                <span class="text text-1">Book A Table</span>
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+                <h2 class="headline-1 text-center">Contact Us</h2>
+  
+                <p class="contact-label">For parties of 16 or more, please inquire about booking a private event</p>
+  
+                <a href="tel:+88123123456" class="body-1 contact-number hover-underline">717.208.7293</a>
+  
+                <div class="separator"></div>
+  
+                <p class="contact-label">Location</p>
+  
+                <address class="body-4">
+                    38 N Christian St<br> Lancaster, PA 17602
+                </address>
+  
+                <p class="contact-label">Lunch </p>
+  
+                <p class="body-4">
+                  Tuesday to Friday <br>
+                  11:30 am - 1:45 pm <br>
+                  Saturday<br> 12:00 pm- 2:45 pm 
+                </p>
+  
+                <p class="contact-label">Dinner</p>
+  
+                <p class="body-4">
+                Wednesday - Thursday<br> 5:00 pm - 8:00 pm <br>
+                Friday - Saturday <br>5:00 pm - 8:30 pm 
+                </p>
+                <p class="contact-label">We are BYOB!</p>
+              </div>
+  
+            </div>
+  
+          </div>
+        </section>
+  
+           
+      </section>
+
+
+        </article>
+    </main>
+
+  
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+ 
+
+
+
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
