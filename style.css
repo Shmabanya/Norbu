@@ -298,6 +298,12 @@
   .contact-number::after { bottom: -5px; }
   
   .text-center { text-align: center; }
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Prevents inline spacing issues */
+}
+
   
   .img-cover {
     width: 100%;
